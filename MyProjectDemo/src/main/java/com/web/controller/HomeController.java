@@ -25,7 +25,7 @@ public class HomeController {
 
 			model.addAttribute("serverTime", formattedDate);
 			model.addAttribute("sirname","maner");
-			//System.out.println("home");
+			System.out.println("home");
 			return "home";
 		}
 
