@@ -1,5 +1,4 @@
 package com.web.bean;
-
 public class User {
 	
 	private String name;

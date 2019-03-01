@@ -29,12 +29,17 @@ public class HomeController {
 			return "home";
 		}
 
-		@RequestMapping(value = "/User", method = RequestMethod.POST)
+		@RequestMapping(value = "/user", method = RequestMethod.POST)
 		public String user(@Validated User user, Model model) {
 			System.out.println("User Page Requested");
+			if(user.getName().equals("")) {
+				model.addAttribute("name", "User");
+			}else {
+			model.addAttribute("name", user.getName());}
 			model.addAttribute("userName", user.getUserName());
-			System.out.println("hey this is working");
-			return "User";
+			model.addAttribute("password", user.getPassword());
+			System.out.println("hey this is working fine");
+			return "user";
 		}
 	
 

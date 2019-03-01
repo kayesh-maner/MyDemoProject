@@ -7,6 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
+<h3>Hi ${user.getName()}</h3>
 <h3>Hi ${user.getUserName()}</h3>
 </body>
 </html>
