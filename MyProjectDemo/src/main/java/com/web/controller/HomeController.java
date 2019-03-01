@@ -25,7 +25,7 @@ public class HomeController {
 
 			model.addAttribute("serverTime", formattedDate);
 			model.addAttribute("sirname","maner");
-			System.out.println("home");
+			/*System.out.println("home");*/
 			return "home";
 		}
 
@@ -33,7 +33,7 @@ public class HomeController {
 		public String user(@Validated User user, Model model) {
 			System.out.println("User Page Requested");
 			model.addAttribute("userName", user.getUserName());
-			System.out.println("hey this is working");
+		/*	System.out.println("hey this is working");*/
 			return "User";
 		}
 	
